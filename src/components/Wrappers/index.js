@@ -29,9 +29,9 @@ export const Wrapper = ({ children, style, flex, animation, duration }) => {
   );
 };
 
-export const RowWrapper = ({ children, style, removeMargin }) => {
+export const RowWrapper = ({ children, style }) => {
   return (
-    <Animatable.View style={[styles.rowCompContainer, { marginHorizontal: removeMargin ? 0 : '5%' }, style]}>
+    <Animatable.View style={[styles.rowCompContainer, style]}>
       {children}
     </Animatable.View>
   );

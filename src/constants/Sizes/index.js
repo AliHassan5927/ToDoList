@@ -13,8 +13,8 @@ const fontSize = {
   input: totalSize(1.75),
   large: totalSize(2),
   medium: totalSize(1.75),
-  regular: totalSize(1.55),
-  small: totalSize(1.25),
+  regular: totalSize(1.65),
+  small: totalSize(1.45),
   tiny: totalSize(1)
 }
 const sizes = {
@@ -22,7 +22,7 @@ const sizes = {
   TinyMargin: totalSize(0.5),
   smallMargin: totalSize(1),
   baseMargin: totalSize(2),
-  doubleBaseMargin: totalSize(5),
+  doubleBaseMargin: 22,
   doubleSection: 50,
   horizontalLineHeight: 1,
   searchBarHeight: 30,
@@ -31,9 +31,9 @@ const sizes = {
   buttonSmallRadius: 5,
   buttonMiniRadius: 7,
   modalRadius: 15,
-  cardRadius: 15,
+  cardRadius: 20,
   ModalRadius: 25,
-  inputRadius: 8,
+  inputRadius: 5,
   smallImageRadius: 10,
   cameraBgHeight: 80,
   cameraBgWeidth: 80,

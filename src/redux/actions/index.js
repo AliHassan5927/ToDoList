@@ -1,9 +1,16 @@
-import { ACCOUNTTYPE, } from '../types/index'
+import { ADD_TASK, DELETE_TASK } from "../types";
 
 
-export const set_account_type = payload => {
+export const addTask = (task) => {
     return {
-        type: ACCOUNTTYPE,
-        payload: payload
-    }
-}
+        type: ADD_TASK,
+        payload: task,
+    };
+};
+
+export const deleteTask = (updatedTasks) => {
+    return {
+        type: DELETE_TASK,
+        payload: updatedTasks,
+    };
+};

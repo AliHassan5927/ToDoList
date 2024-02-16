@@ -4,9 +4,11 @@ export const Colors = {
   secondary: '#FFC817',
   black: '#000000',
   error: '#FF0000',
+  blue: '#2a3596',
+  purpule: '#962a57',
+  placeholder: '#92979D',
+  white: '#FFFFFF',
 
-  //Gradient
-  gradient1: ['#C2C9D1', '#C2C9D199', '#C2C9D140'],
 
   //BACKGROUND
   background1: '#FFFFFF',
@@ -18,7 +20,8 @@ export const Colors = {
 
   //Texts
   text1: '#232528',
-  text2: '#fff',
+  text2: '#555555',
+  text3: '#444444',
 
   //BORDER
   border1: '#152938',

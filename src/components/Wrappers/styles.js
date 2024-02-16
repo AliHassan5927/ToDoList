@@ -14,7 +14,6 @@ export const styles = StyleSheet.create({
   },
   rowCompContainer: {
     alignItems: 'center',
-    marginHorizontal: '5%',
     flexDirection: 'row',
     justifyContent: 'space-between',
   },

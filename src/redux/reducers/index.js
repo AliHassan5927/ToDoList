@@ -1,15 +1,22 @@
-import { ACCOUNTTYPE, } from '../types/index'
+import { ADD_TASK, DELETE_TASK } from "../types";
+
 const intialState = {
-    account_type: '',
+    tasks: [],
+
 }
 const reducer = (state = intialState, action) => {
     switch (action.type) {
-        case ACCOUNTTYPE: {
+        case ADD_TASK:
             return {
                 ...state,
-                account_type: action.payload,
-            }
-        }
+                tasks: action?.payload,
+                // tasks: [...state.tasks, action.payload],
+            };
+        case DELETE_TASK:
+            return {
+                ...state,
+                tasks: action.payload, // Updated tasks array after deletion
+            };
         default:
             return state
     }

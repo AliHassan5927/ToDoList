@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { AllTasks, CreateTask, TaskDetail } from '@screens';
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StatusBar, StyleSheet, View } from 'react-native';
 import BootSplash from "react-native-bootsplash";
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -13,6 +13,7 @@ const Navigation = () => {
   const { styles } = useStyles()
   return (
     <View style={styles.container}>
+      <StatusBar backgroundColor={'transparent'} barStyle={'dark-content'} />
       <NavigationContainer onReady={() => BootSplash.hide()}>
 
         <Navigator
@@ -38,7 +39,7 @@ const useStyles = () => {
     container: {
       flex: 1,
       paddingTop: insets.top,
-      backgroundColor: Colors.primary,
+      backgroundColor: Colors.background1,
       paddingBottom: insets.bottom
     }
 

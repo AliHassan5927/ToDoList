@@ -1,34 +1,22 @@
+import { FontFamily } from "@assets/Fonts"
+import { Colors } from "@constants"
+import { height } from "@services/dimensions"
 import { StyleSheet } from "react-native"
-import { fontFamily } from "../../constants"
-import { normalize, width } from "../../services"
 
 export const styles = StyleSheet.create({
-    socialText: {
-        width: width(60),
-        alignItems: 'center'
-    },
     buttonColored: {
-        height: normalize(46),
-        borderRadius: 14,
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
-
-    buttonBordered: {
-        height: normalize(46),
-        borderRadius: 14,
+        height: height(7),
         justifyContent: 'center',
         alignItems: 'center',
-        borderWidth: 1
+        backgroundColor: Colors.button1,
+        borderRadius: 30,
+        width: '60%',
+        alignSelf: 'center'
     },
     buttonTxt: {
-        fontSize: normalize(18),
-        fontFamily: fontFamily.bold,
+        fontFamily: FontFamily.bold,
+        color: Colors.white,
+        fontSize: 16
     },
-    rounded: {
-        borderRadius: 100,
-    },
-
-
 })
 

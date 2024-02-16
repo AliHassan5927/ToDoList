@@ -4,6 +4,16 @@ import { FontFamily } from "@assets/Fonts"
 import { Text } from "src/core-ui"
 
 
+export const SmallText = ({ style, children, ...props }) => {
+    return (
+        <Text
+            style={[styles.smallText, style]}
+            {...props}
+        >
+            {children}
+        </Text>
+    )
+}
 export const RegularText = ({ style, children, ...props }) => {
     return (
         <Text
@@ -37,6 +47,11 @@ export const LargeText = ({ style, children, ...props }) => {
 
 const styles = StyleSheet.create({
 
+    smallText: {
+        fontSize: fontSize.small,
+        color: Colors.text1,
+        fontFamily: FontFamily.light
+    },
     regularText: {
         fontSize: fontSize.regular,
         color: Colors.text1,

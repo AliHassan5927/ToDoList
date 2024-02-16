@@ -11,7 +11,7 @@ export const TouchableOpacity = ({ onPress, children, disabled, style, childkey,
             hitSlop={{
                 right: 8, top: 8, left: 8, bottom: 8
             }}
-            activeOpacity={activeOpacity ?? .8}>
+            activeOpacity={activeOpacity ?? .85}>
             {children}
         </RNTouchableOpacity>
     )
