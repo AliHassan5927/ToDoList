@@ -43,16 +43,15 @@
 		<string>Poppins-Regular.ttf</string>
 		<string>Poppins-SemiBold.ttf</string>
 	</array>
-	
-	  <key>LSApplicationQueriesSchemes</key>
-    <array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
 		<string>whatsapp</string>
 		<string>mailto</string>
 		<string>instagram</string>
 		<string>instagram-stories</string>
 		<string>fb</string>
 		<string>facebook-stories</string>
-  	</array>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>BootSplash.storyboard</string>
 	<key>UIRequiredDeviceCapabilities</key>
